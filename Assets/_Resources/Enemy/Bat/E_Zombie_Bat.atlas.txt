@@ -1,0 +1,13 @@
+E_Zombie_Bat.png
+size:256,256
+filter:Linear,Linear
+pma:true
+Body
+bounds:2,141,41,61
+rotate:90
+Wing L
+bounds:65,135,47,58
+rotate:90
+Wing R
+bounds:125,127,55,57
+rotate:90
