@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8075794283554862154}
   - component: {fileID: 3926305584971856029}
   m_Layer: 0
-  m_Name: GarlicController
+  m_Name: GarlicCtrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

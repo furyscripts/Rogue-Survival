@@ -1,0 +1,14 @@
+Eff_Skill_Hero_02.png
+size:344,344
+filter:Linear,Linear
+pma:true
+210
+bounds:212,85,125,125
+XDG06
+bounds:212,212,128,128
+thunder1
+bounds:2,40,68,300
+thunder2
+bounds:72,40,68,300
+thunder3
+bounds:142,40,68,300

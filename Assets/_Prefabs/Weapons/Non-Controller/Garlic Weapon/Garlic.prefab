@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -8477834106985191902}
   - component: {fileID: -6179313123008478366}
   m_Layer: 0
-  m_Name: Garlic Weapon
+  m_Name: Garlic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
