@@ -8,7 +8,7 @@ public class ExperienceStar : Pickup, ICollectible
 
     public void Collect()
     {
-        PlayerStats playerStats = FindAnyObjectByType<PlayerStats>();
+        PlayerStats playerStats = FindObjectOfType<PlayerStats>();
         playerStats.IncreaseExperience(experienceGranted);
     }
 }

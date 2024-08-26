@@ -10,18 +10,18 @@ public class EnemyMovement : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<PlayerMovement>().transform;
-        enemyStats = GetComponent<EnemyStats>();
+        enemyStats = FindObjectOfType<EnemyStats>();
     }
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, enemyStats.currentMoveSpeed * Time.deltaTime);
+        transform.parent.position = Vector2.MoveTowards(transform.parent.position, player.transform.position, enemyStats.currentMoveSpeed * Time.deltaTime);
         Flip();
     }
 
     void Flip()
     {
-        if (player.transform.position.x > transform.position.x) transform.localScale = new Vector2(1f, 1f);
-        else transform.localScale = new Vector2(-1f, 1f);
+        if (player.transform.position.x > transform.parent.position.x) transform.parent.localScale = new Vector2(1f, 1f);
+        else transform.parent.localScale = new Vector2(-1f, 1f);
     }
 }
