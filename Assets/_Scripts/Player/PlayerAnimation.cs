@@ -14,7 +14,7 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Start()
     {
-        playerMovement = GetComponent<PlayerMovement>();
+        playerMovement = FindObjectOfType<PlayerMovement>();
         currentState = "Idle";
         SetCharacterState(currentState);
     }
@@ -49,7 +49,7 @@ public class PlayerAnimation : MonoBehaviour
 
     void Flip()
     {
-        if (playerMovement.moveDir.x > 0) transform.localScale = new Vector2(1f, 1f);
-        else transform.localScale = new Vector2(-1f, 1f);
+        if (playerMovement.moveDir.x > 0) transform.parent.localScale = new Vector2(1f, 1f);
+        else transform.parent.localScale = new Vector2(-1f, 1f);
     }
 }

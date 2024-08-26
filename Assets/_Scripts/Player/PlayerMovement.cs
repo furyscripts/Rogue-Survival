@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        playerStats = GetComponent<PlayerStats>();
-        rigidBody = GetComponent<Rigidbody2D>();
+        playerStats = FindObjectOfType<PlayerStats>();
+        rigidBody = transform.parent.GetComponent<Rigidbody2D>();
         lastMovedVector = new Vector2(1, 0f);
     }
 
