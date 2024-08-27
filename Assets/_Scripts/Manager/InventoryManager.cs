@@ -10,7 +10,7 @@ public class InventoryManager : MonoBehaviour
     public List<Image> weaponUISlots = new List<Image>(6);
     public List<PassiveItem> passiveItemSlots = new List<PassiveItem>(6);
     public int[] passItemLevels = new int[6];
-    public List<Image> passiveUISlots = new List<Image>(6);
+    public List<Image> passiveItemUISlots = new List<Image>(6);
 
     public void AddWeapon(int slotIndex, WeaponController weapon)
     {
@@ -24,8 +24,8 @@ public class InventoryManager : MonoBehaviour
     {
         passiveItemSlots[slotIndex] = passiveItem;
         passItemLevels[slotIndex] = passiveItem.passiveItemSO.Level;
-        passiveUISlots[slotIndex].enabled = true;
-        passiveUISlots[slotIndex].sprite = passiveItem.passiveItemSO.Icon;
+        passiveItemUISlots[slotIndex].enabled = true;
+        passiveItemUISlots[slotIndex].sprite = passiveItem.passiveItemSO.Icon;
     }
 
     public void LevelWeapon(int slotIndex)
